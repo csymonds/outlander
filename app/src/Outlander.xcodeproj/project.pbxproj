@@ -32,16 +32,16 @@
 		7B10A6982763468C000FEDE8 /* WindowSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B10A6962763468C000FEDE8 /* WindowSettings.storyboard */; };
 		7B10A69A276346C9000FEDE8 /* WindowSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10A699276346C9000FEDE8 /* WindowSettingsViewController.swift */; };
 		7B10A69B276346C9000FEDE8 /* WindowSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10A699276346C9000FEDE8 /* WindowSettingsViewController.swift */; };
-		7B35B1D52C1DA3E9000C5C1F /* MacroPreferencesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1D42C1DA3E9000C5C1F /* MacroPreferencesCoordinator.swift */; };
-		7B35B1D62C1DA3E9000C5C1F /* MacroPreferencesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1D42C1DA3E9000C5C1F /* MacroPreferencesCoordinator.swift */; };
 		7B35B1F12C1DB240000C5C1F /* MacroPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F02C1DB240000C5C1F /* MacroPreferencesModel.swift */; };
 		7B35B1F22C1DB240000C5C1F /* MacroPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F02C1DB240000C5C1F /* MacroPreferencesModel.swift */; };
-		7B35B1F42C1DB240000C5C1F /* MacroPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F32C1DB240000C5C1F /* MacroPreferencesViewController.swift */; };
-		7B35B1F52C1DB240000C5C1F /* MacroPreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F32C1DB240000C5C1F /* MacroPreferencesViewController.swift */; };
 		7B35B1F72C1DB240000C5C1F /* GameContext+Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F62C1DB240000C5C1F /* GameContext+Macros.swift */; };
 		7B35B1F82C1DB240000C5C1F /* GameContext+Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F62C1DB240000C5C1F /* GameContext+Macros.swift */; };
 		7B35B2062C1DCA58000C5C1F /* MacroDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B2052C1DCA58000C5C1F /* MacroDefaults.swift */; };
 		7B35B2072C1DCA58000C5C1F /* MacroDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B2052C1DCA58000C5C1F /* MacroDefaults.swift */; };
+		7B35B2082C1DDE14000C5C1F /* MacroPreferencesModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B2092C1DDE14000C5C1F /* MacroPreferencesModelTests.swift */; };
+		7B35B20B2C1DE2F2000C5C1F /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B20E2C1DE2F2000C5C1F /* PreferencesWindowController.swift */; };
+		7B35B20C2C1DE2F2000C5C1F /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B20F2C1DE2F2000C5C1F /* PreferencesView.swift */; };
+		7B35B20D2C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B2102C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift */; };
 		7B228AF927277BBA0052610B /* SendCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B228AF827277BBA0052610B /* SendCommandHandler.swift */; };
 		7B228AFA272795920052610B /* SendCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B228AF827277BBA0052610B /* SendCommandHandler.swift */; };
 		7B228AFC2728BBB30052610B /* StatusBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B228AFB2728BBB30052610B /* StatusBarViewController.swift */; };
@@ -345,11 +345,13 @@
 		7B10A693275FFA25000FEDE8 /* EvalCommandHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvalCommandHandler.swift; sourceTree = "<group>"; };
 		7B10A6962763468C000FEDE8 /* WindowSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WindowSettings.storyboard; sourceTree = "<group>"; };
 		7B10A699276346C9000FEDE8 /* WindowSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSettingsViewController.swift; sourceTree = "<group>"; };
-		7B35B1D42C1DA3E9000C5C1F /* MacroPreferencesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroPreferencesCoordinator.swift; sourceTree = "<group>"; };
 		7B35B1F02C1DB240000C5C1F /* MacroPreferencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroPreferencesModel.swift; sourceTree = "<group>"; };
-		7B35B1F32C1DB240000C5C1F /* MacroPreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroPreferencesViewController.swift; sourceTree = "<group>"; };
 		7B35B1F62C1DB240000C5C1F /* GameContext+Macros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameContext+Macros.swift"; sourceTree = "<group>"; };
 		7B35B2052C1DCA58000C5C1F /* MacroDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroDefaults.swift; sourceTree = "<group>"; };
+		7B35B2092C1DDE14000C5C1F /* MacroPreferencesModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroPreferencesModelTests.swift; sourceTree = "<group>"; };
+		7B35B20E2C1DE2F2000C5C1F /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		7B35B20F2C1DE2F2000C5C1F /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		7B35B2102C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroPreferencesViewModel.swift; sourceTree = "<group>"; };
 		7B228AF827277BBA0052610B /* SendCommandHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendCommandHandler.swift; sourceTree = "<group>"; };
 		7B228AFB2728BBB30052610B /* StatusBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarViewController.swift; sourceTree = "<group>"; };
 		7B228B002728C1670052610B /* StatusBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StatusBar.storyboard; sourceTree = "<group>"; };
@@ -703,6 +705,9 @@
 				7BD0FD4D25C75AD400ED030E /* MapView.swift */,
 				7BD0FD4325C7559900ED030E /* MapWindow.swift */,
 				7BD0FD4425C7559900ED030E /* MapWindow.xib */,
+				7B35B20E2C1DE2F2000C5C1F /* PreferencesWindowController.swift */,
+				7B35B20F2C1DE2F2000C5C1F /* PreferencesView.swift */,
+				7B35B2102C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift */,
 				7B10A671275D7F37000FEDE8 /* OWindow.swift */,
 				7B10A66E275D7EE9000FEDE8 /* OView.swift */,
 				F9B254042478996D0097C07F /* ProfileWindow.swift */,
@@ -716,9 +721,7 @@
 				F969A0E7239C7F9B00408CE5 /* Window.storyboard */,
 				F969A0EA239C812900408CE5 /* WindowViewController.swift */,
 				7B10A699276346C9000FEDE8 /* WindowSettingsViewController.swift */,
-				7B35B1D42C1DA3E9000C5C1F /* MacroPreferencesCoordinator.swift */,
 				7B35B1F02C1DB240000C5C1F /* MacroPreferencesModel.swift */,
-				7B35B1F32C1DB240000C5C1F /* MacroPreferencesViewController.swift */,
 				7B10A6962763468C000FEDE8 /* WindowSettings.storyboard */,
 			);
 			path = UI;
@@ -789,6 +792,7 @@
 				7B228B1F27387B200052610B /* Maps */,
 				7BA27B3B25DF705D00A88B80 /* Scripting */,
 				F9CA20712467769A00A92736 /* Settings */,
+				7B35B20A2C1DDE14000C5C1F /* UI */,
 				F9CA20512466057000A92736 /* Handlers */,
 				F9CA206A2466761B00A92736 /* InMemoryHelpers.swift */,
 				F9D36E9522EFC73B008BC6E6 /* GameStreamTests.swift */,
@@ -799,6 +803,14 @@
 				7B3B9A1827596F390035D731 /* TestPlayground.playground */,
 			);
 			path = OutlanderTests;
+			sourceTree = "<group>";
+		};
+		7B35B20A2C1DDE14000C5C1F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7B35B2092C1DDE14000C5C1F /* MacroPreferencesModelTests.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		F9CA20442453ACDC00A92736 /* Handlers */ = {
@@ -1060,11 +1072,12 @@
 				7BA27B3725DF6D9D00A88B80 /* Script.swift in Sources */,
 				F9BCF31E22E28EC200C7F7F0 /* Socket.swift in Sources */,
 				7B10A69A276346C9000FEDE8 /* WindowSettingsViewController.swift in Sources */,
-				7B35B1D52C1DA3E9000C5C1F /* MacroPreferencesCoordinator.swift in Sources */,
 				7B35B1F12C1DB240000C5C1F /* MacroPreferencesModel.swift in Sources */,
-				7B35B1F42C1DB240000C5C1F /* MacroPreferencesViewController.swift in Sources */,
 				7B35B1F72C1DB240000C5C1F /* GameContext+Macros.swift in Sources */,
-				7B228AF927277BBA0052610B /* SendCommandHandler.swift in Sources */,
+					7B35B20B2C1DE2F2000C5C1F /* PreferencesWindowController.swift in Sources */,
+					7B35B20C2C1DE2F2000C5C1F /* PreferencesView.swift in Sources */,
+					7B35B20D2C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift in Sources */,
+					7B228AF927277BBA0052610B /* SendCommandHandler.swift in Sources */,
 				7B917E5C27641E5300887F95 /* SimplePing.m in Sources */,
 				7B10A68E275FE538000FEDE8 /* HighlightsCommandHandler.swift in Sources */,
 				F9CA2075246776E100A92736 /* ClassLoader.swift in Sources */,
@@ -1198,10 +1211,11 @@
 				7B228B1E273871720052610B /* Pathfinder.swift in Sources */,
 				F98B4907246F8EFD000E2D92 /* AliasLoader.swift in Sources */,
 				7B10A69B276346C9000FEDE8 /* WindowSettingsViewController.swift in Sources */,
-				7B35B1D62C1DA3E9000C5C1F /* MacroPreferencesCoordinator.swift in Sources */,
 				7B35B1F22C1DB240000C5C1F /* MacroPreferencesModel.swift in Sources */,
-				7B35B1F52C1DB240000C5C1F /* MacroPreferencesViewController.swift in Sources */,
 				7B35B1F82C1DB240000C5C1F /* GameContext+Macros.swift in Sources */,
+				7B35B20C2C1DE2F2000C5C1F /* PreferencesView.swift in Sources */,
+				7B35B20D2C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift in Sources */,
+				7B35B20B2C1DE2F2000C5C1F /* PreferencesWindowController.swift in Sources */,
 				7B35B2072C1DCA58000C5C1F /* MacroDefaults.swift in Sources */,
 				F98B4911246FA149000E2D92 /* SubstituteLoaderTests.swift in Sources */,
 				7B3B9A1B2759DB200035D731 /* IconLoader.swift in Sources */,

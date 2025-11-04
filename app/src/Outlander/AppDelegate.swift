@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SwiftUI
 import Sparkle
 
 @main
@@ -14,9 +15,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 //    let updaterController: SPUStandardUpdaterController
     var windows: [NSWindow] = []
     var rootUrl: URL?
-    private lazy var macroPreferencesCoordinator = MacroPreferencesCoordinator { [weak self] in
-        self?.activeController?.gameContext
-    }
+    @available(macOS 11.0, *)
+    private lazy var preferencesController = PreferencesWindowController()
 
     override init() {
 //        updaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil)
@@ -90,10 +90,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         windows.removeAll()
     }
 
-    @IBAction func preferences(_: Any) {
-        print("Preferences")
-    }
-
     @IBAction func connect(_: Any) {
         activeController?.showLogin()
     }
@@ -134,25 +130,27 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         sendCommand("layout:Settings")
     }
 
-    @IBAction func showHighlightsPreferences(_: Any) {
-        let alert = NSAlert()
-        alert.messageText = "Highlights preferences are not available yet."
-        alert.informativeText = "Highlight management will be added in a future update."
-        alert.alertStyle = .informational
-        alert.addButton(withTitle: "OK")
-        alert.runModal()
-    }
+    @IBAction func preferences(_: Any?) {
+        guard let context = activeController?.gameContext else {
+            let alert = NSAlert()
+            alert.messageText = "No active game window"
+            alert.informativeText = "Open or select a game window before updating preferences."
+            alert.alertStyle = .informational
+            alert.addButton(withTitle: "OK")
+            alert.runModal()
+            return
+        }
 
-    @IBAction func showAZMacros(_: Any) {
-        macroPreferencesCoordinator.showWindow(for: .letters)
-    }
-
-    @IBAction func showKeypadMacros(_: Any) {
-        macroPreferencesCoordinator.showWindow(for: .keypad)
-    }
-
-    @IBAction func showFunctionMacros(_: Any) {
-        macroPreferencesCoordinator.showWindow(for: .function)
+        if #available(macOS 11.0, *) {
+            preferencesController.show(with: context)
+        } else {
+            let alert = NSAlert()
+            alert.messageText = "Preferences Unavailable"
+            alert.informativeText = "Preferences require macOS 11 or newer."
+            alert.alertStyle = .informational
+            alert.addButton(withTitle: "OK")
+            alert.runModal()
+        }
     }
 
     @IBAction func chooseSettingsDirectoryAction(_: Any) {

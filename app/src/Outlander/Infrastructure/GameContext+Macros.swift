@@ -2,14 +2,14 @@
 //  GameContext+Macros.swift
 //  Outlander
 //
-//  Created by Codex on 5/18/25.
+//  Created by Christopher Symonds using Codex 11/02/2025.
 //
 
 import Cocoa
 
 extension Macro {
     func matches(key: Key, modifiers: NSEvent.ModifierFlags) -> Bool {
-        carbonKeyCode == key.rawValue && self.modifiers == modifiers
+        carbonKeyCode == key.rawValue && self.modifiers.rawValue == modifiers.rawValue
     }
 }
 

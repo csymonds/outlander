@@ -2,7 +2,7 @@
 //  MacroPreferencesModel.swift
 //  Outlander
 //
-//  Created by Codex on 5/18/25.
+//  Created by Christopher Symonds using Codex 11/02/2025.
 //
 
 import Carbon.HIToolbox
@@ -11,6 +11,20 @@ import Cocoa
 struct MacroKeyDefinition: Hashable {
     let title: String
     let key: Key
+}
+
+enum MacroPreferencesCategory: CaseIterable, Hashable {
+    case keypad
+    case letters
+    case function
+
+    var title: String {
+        switch self {
+        case .keypad: "Keypad"
+        case .letters: "Letters"
+        case .function: "Function"
+        }
+    }
 }
 
 enum MacroModifierGroup: Hashable {
@@ -68,8 +82,8 @@ enum MacroModifierGroup: Hashable {
     }
 }
 
-struct MacroPreferencesStore {
-    private(set) var values: [MacroModifierGroup: [Key: String]] = [:]
+final class MacroPreferencesStore {
+    private var values: [MacroModifierGroup: [Key: String]] = [:]
     private let reserved: [MacroModifierGroup: [Key: String]]
     let keyDefinitions: [MacroKeyDefinition]
     let modifierGroups: [MacroModifierGroup]
@@ -101,12 +115,12 @@ struct MacroPreferencesStore {
         values[group]?[key] ?? ""
     }
 
-    mutating func setValue(_ value: String, for group: MacroModifierGroup, key: Key) {
-        guard values[group] != nil else {
-            return
-        }
+    func setValue(_ value: String, for group: MacroModifierGroup, key: Key) {
         guard reserved[group]?[key] == nil else {
             return
+        }
+        if values[group] == nil {
+            values[group] = [:]
         }
         values[group]?[key] = value
     }
@@ -188,17 +202,17 @@ struct MacroPreferencesStore {
 
     private static func defaultValues(for category: MacroPreferencesCategory) -> [MacroModifierGroup: [Key: String]] {
         let allowedKeys = Set(buildKeyDefinitions(for: category).map { $0.key })
-        let rawValues = MacroDefaults.valuesByModifierRaw(filteredBy: allowedKeys)
+        let defaults = MacroDefaults.entries.filter { allowedKeys.contains($0.key) }
         var result: [MacroModifierGroup: [Key: String]] = [:]
 
-        for (rawFlags, mapping) in rawValues {
-            let flags = NSEvent.ModifierFlags(rawValue: rawFlags)
-            guard let group = MacroModifierGroup.group(for: flags) else { continue }
-            guard MacroModifierGroup.groups(for: category).contains(group) else { continue }
-            guard !mapping.isEmpty else { continue }
+        for entry in defaults {
+            guard let group = MacroModifierGroup.group(for: entry.modifiers),
+                MacroModifierGroup.groups(for: category).contains(group) else { continue }
+
+            var mapping = result[group] ?? [:]
+            mapping[entry.key] = entry.action
             result[group] = mapping
         }
-
         return result
     }
 
