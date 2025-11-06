@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B9689DB2EBB9E8500B0E46F /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B20F2C1DE2F2000C5C1F /* PreferencesView.swift */; };
+		6B9689DC2EBB9E8500B0E46F /* MacroPreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B2102C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift */; };
+		6B9689DD2EBB9E8500B0E46F /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B20E2C1DE2F2000C5C1F /* PreferencesWindowController.swift */; };
 		7B0A8AAB296A14DD0036C5BF /* ApplicationVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A8AAA296A14DD0036C5BF /* ApplicationVersion.swift */; };
 		7B0A8AAC296A14DD0036C5BF /* ApplicationVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B0A8AAA296A14DD0036C5BF /* ApplicationVersion.swift */; };
 		7B10A569275C0CC1000FEDE8 /* PluginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10A568275C0CC1000FEDE8 /* PluginManager.swift */; };
@@ -32,16 +35,6 @@
 		7B10A6982763468C000FEDE8 /* WindowSettings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B10A6962763468C000FEDE8 /* WindowSettings.storyboard */; };
 		7B10A69A276346C9000FEDE8 /* WindowSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10A699276346C9000FEDE8 /* WindowSettingsViewController.swift */; };
 		7B10A69B276346C9000FEDE8 /* WindowSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B10A699276346C9000FEDE8 /* WindowSettingsViewController.swift */; };
-		7B35B1F12C1DB240000C5C1F /* MacroPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F02C1DB240000C5C1F /* MacroPreferencesModel.swift */; };
-		7B35B1F22C1DB240000C5C1F /* MacroPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F02C1DB240000C5C1F /* MacroPreferencesModel.swift */; };
-		7B35B1F72C1DB240000C5C1F /* GameContext+Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F62C1DB240000C5C1F /* GameContext+Macros.swift */; };
-		7B35B1F82C1DB240000C5C1F /* GameContext+Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F62C1DB240000C5C1F /* GameContext+Macros.swift */; };
-		7B35B2062C1DCA58000C5C1F /* MacroDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B2052C1DCA58000C5C1F /* MacroDefaults.swift */; };
-		7B35B2072C1DCA58000C5C1F /* MacroDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B2052C1DCA58000C5C1F /* MacroDefaults.swift */; };
-		7B35B2082C1DDE14000C5C1F /* MacroPreferencesModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B2092C1DDE14000C5C1F /* MacroPreferencesModelTests.swift */; };
-		7B35B20B2C1DE2F2000C5C1F /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B20E2C1DE2F2000C5C1F /* PreferencesWindowController.swift */; };
-		7B35B20C2C1DE2F2000C5C1F /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B20F2C1DE2F2000C5C1F /* PreferencesView.swift */; };
-		7B35B20D2C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B2102C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift */; };
 		7B228AF927277BBA0052610B /* SendCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B228AF827277BBA0052610B /* SendCommandHandler.swift */; };
 		7B228AFA272795920052610B /* SendCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B228AF827277BBA0052610B /* SendCommandHandler.swift */; };
 		7B228AFC2728BBB30052610B /* StatusBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B228AFB2728BBB30052610B /* StatusBarViewController.swift */; };
@@ -79,6 +72,15 @@
 		7B27C5AE274AE2E40095B9BF /* ExpressionTokenizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27C5AD274AE2E40095B9BF /* ExpressionTokenizerTests.swift */; };
 		7B27C5B0274B23760095B9BF /* ScriptContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27C5AF274B23760095B9BF /* ScriptContext.swift */; };
 		7B27C5B1274B23760095B9BF /* ScriptContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27C5AF274B23760095B9BF /* ScriptContext.swift */; };
+		7B35B1F12C1DB240000C5C1F /* MacroPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F02C1DB240000C5C1F /* MacroPreferencesModel.swift */; };
+		7B35B1F22C1DB240000C5C1F /* MacroPreferencesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F02C1DB240000C5C1F /* MacroPreferencesModel.swift */; };
+		7B35B1F72C1DB240000C5C1F /* GameContext+Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F62C1DB240000C5C1F /* GameContext+Macros.swift */; };
+		7B35B1F82C1DB240000C5C1F /* GameContext+Macros.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B1F62C1DB240000C5C1F /* GameContext+Macros.swift */; };
+		7B35B2062C1DCA58000C5C1F /* MacroDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B2052C1DCA58000C5C1F /* MacroDefaults.swift */; };
+		7B35B2072C1DCA58000C5C1F /* MacroDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B2052C1DCA58000C5C1F /* MacroDefaults.swift */; };
+		7B35B20B2C1DE2F2000C5C1F /* PreferencesWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B20E2C1DE2F2000C5C1F /* PreferencesWindowController.swift */; };
+		7B35B20C2C1DE2F2000C5C1F /* PreferencesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B20F2C1DE2F2000C5C1F /* PreferencesView.swift */; };
+		7B35B20D2C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B35B2102C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift */; };
 		7B3B9A162758BDBE0035D731 /* PresetCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B9A152758BDBE0035D731 /* PresetCommandHandler.swift */; };
 		7B3B9A172758BDBE0035D731 /* PresetCommandHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B9A152758BDBE0035D731 /* PresetCommandHandler.swift */; };
 		7B3B9A1A2759DB200035D731 /* IconLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B3B9A192759DB200035D731 /* IconLoader.swift */; };
@@ -345,13 +347,6 @@
 		7B10A693275FFA25000FEDE8 /* EvalCommandHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EvalCommandHandler.swift; sourceTree = "<group>"; };
 		7B10A6962763468C000FEDE8 /* WindowSettings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WindowSettings.storyboard; sourceTree = "<group>"; };
 		7B10A699276346C9000FEDE8 /* WindowSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowSettingsViewController.swift; sourceTree = "<group>"; };
-		7B35B1F02C1DB240000C5C1F /* MacroPreferencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroPreferencesModel.swift; sourceTree = "<group>"; };
-		7B35B1F62C1DB240000C5C1F /* GameContext+Macros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameContext+Macros.swift"; sourceTree = "<group>"; };
-		7B35B2052C1DCA58000C5C1F /* MacroDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroDefaults.swift; sourceTree = "<group>"; };
-		7B35B2092C1DDE14000C5C1F /* MacroPreferencesModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroPreferencesModelTests.swift; sourceTree = "<group>"; };
-		7B35B20E2C1DE2F2000C5C1F /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
-		7B35B20F2C1DE2F2000C5C1F /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
-		7B35B2102C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroPreferencesViewModel.swift; sourceTree = "<group>"; };
 		7B228AF827277BBA0052610B /* SendCommandHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendCommandHandler.swift; sourceTree = "<group>"; };
 		7B228AFB2728BBB30052610B /* StatusBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarViewController.swift; sourceTree = "<group>"; };
 		7B228B002728C1670052610B /* StatusBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StatusBar.storyboard; sourceTree = "<group>"; };
@@ -374,6 +369,13 @@
 		7B27C5AA274ADE1A0095B9BF /* ExpressionTokenizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionTokenizer.swift; sourceTree = "<group>"; };
 		7B27C5AD274AE2E40095B9BF /* ExpressionTokenizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionTokenizerTests.swift; sourceTree = "<group>"; };
 		7B27C5AF274B23760095B9BF /* ScriptContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptContext.swift; sourceTree = "<group>"; };
+		7B35B1F02C1DB240000C5C1F /* MacroPreferencesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroPreferencesModel.swift; sourceTree = "<group>"; };
+		7B35B1F62C1DB240000C5C1F /* GameContext+Macros.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GameContext+Macros.swift"; sourceTree = "<group>"; };
+		7B35B2052C1DCA58000C5C1F /* MacroDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroDefaults.swift; sourceTree = "<group>"; };
+		7B35B2092C1DDE14000C5C1F /* MacroPreferencesModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroPreferencesModelTests.swift; sourceTree = "<group>"; };
+		7B35B20E2C1DE2F2000C5C1F /* PreferencesWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesWindowController.swift; sourceTree = "<group>"; };
+		7B35B20F2C1DE2F2000C5C1F /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
+		7B35B2102C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacroPreferencesViewModel.swift; sourceTree = "<group>"; };
 		7B3B9A152758BDBE0035D731 /* PresetCommandHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresetCommandHandler.swift; sourceTree = "<group>"; };
 		7B3B9A1827596F390035D731 /* TestPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = TestPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		7B3B9A192759DB200035D731 /* IconLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLoader.swift; sourceTree = "<group>"; };
@@ -593,6 +595,14 @@
 			path = Plugins;
 			sourceTree = "<group>";
 		};
+		7B35B20A2C1DDE14000C5C1F /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7B35B2092C1DDE14000C5C1F /* MacroPreferencesModelTests.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		7B917E7A2764A78000887F95 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -805,14 +815,6 @@
 			path = OutlanderTests;
 			sourceTree = "<group>";
 		};
-		7B35B20A2C1DDE14000C5C1F /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				7B35B2092C1DDE14000C5C1F /* MacroPreferencesModelTests.swift */,
-			);
-			path = UI;
-			sourceTree = "<group>";
-		};
 		F9CA20442453ACDC00A92736 /* Handlers */ = {
 			isa = PBXGroup;
 			children = (
@@ -950,7 +952,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1100;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2600;
 				ORGANIZATIONNAME = "Joe McBride";
 				TargetAttributes = {
 					F9BCF2E922E177E100C7F7F0 = {
@@ -1074,10 +1076,10 @@
 				7B10A69A276346C9000FEDE8 /* WindowSettingsViewController.swift in Sources */,
 				7B35B1F12C1DB240000C5C1F /* MacroPreferencesModel.swift in Sources */,
 				7B35B1F72C1DB240000C5C1F /* GameContext+Macros.swift in Sources */,
-					7B35B20B2C1DE2F2000C5C1F /* PreferencesWindowController.swift in Sources */,
-					7B35B20C2C1DE2F2000C5C1F /* PreferencesView.swift in Sources */,
-					7B35B20D2C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift in Sources */,
-					7B228AF927277BBA0052610B /* SendCommandHandler.swift in Sources */,
+				7B35B20B2C1DE2F2000C5C1F /* PreferencesWindowController.swift in Sources */,
+				7B35B20C2C1DE2F2000C5C1F /* PreferencesView.swift in Sources */,
+				7B35B20D2C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift in Sources */,
+				7B228AF927277BBA0052610B /* SendCommandHandler.swift in Sources */,
 				7B917E5C27641E5300887F95 /* SimplePing.m in Sources */,
 				7B10A68E275FE538000FEDE8 /* HighlightsCommandHandler.swift in Sources */,
 				F9CA2075246776E100A92736 /* ClassLoader.swift in Sources */,
@@ -1213,9 +1215,9 @@
 				7B10A69B276346C9000FEDE8 /* WindowSettingsViewController.swift in Sources */,
 				7B35B1F22C1DB240000C5C1F /* MacroPreferencesModel.swift in Sources */,
 				7B35B1F82C1DB240000C5C1F /* GameContext+Macros.swift in Sources */,
-				7B35B20C2C1DE2F2000C5C1F /* PreferencesView.swift in Sources */,
-				7B35B20D2C1DE2F2000C5C1F /* MacroPreferencesViewModel.swift in Sources */,
-				7B35B20B2C1DE2F2000C5C1F /* PreferencesWindowController.swift in Sources */,
+				6B9689DB2EBB9E8500B0E46F /* PreferencesView.swift in Sources */,
+				6B9689DC2EBB9E8500B0E46F /* MacroPreferencesViewModel.swift in Sources */,
+				6B9689DD2EBB9E8500B0E46F /* PreferencesWindowController.swift in Sources */,
 				7B35B2072C1DCA58000C5C1F /* MacroDefaults.swift in Sources */,
 				F98B4911246FA149000E2D92 /* SubstituteLoaderTests.swift in Sources */,
 				7B3B9A1B2759DB200035D731 /* IconLoader.swift in Sources */,
@@ -1415,6 +1417,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CODE_SIGN_FLAGS = "";
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -1476,6 +1479,7 @@
 				MTL_FAST_MATH = YES;
 				OTHER_CODE_SIGN_FLAGS = "";
 				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
@@ -1496,7 +1500,11 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Outlander/Info.plist;
@@ -1507,11 +1515,12 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.5;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 3.0;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OutlanderApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Outlander/Outlander-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -1532,7 +1541,11 @@
 				CURRENT_PROJECT_VERSION = 53;
 				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_INCOMING_NETWORK_CONNECTIONS = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = Outlander/Info.plist;
@@ -1543,11 +1556,12 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 11.5;
-				MARKETING_VERSION = 2.0;
+				MARKETING_VERSION = 3.0;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.OutlanderApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				RUNTIME_EXCEPTION_DISABLE_LIBRARY_VALIDATION = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Outlander/Outlander-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
