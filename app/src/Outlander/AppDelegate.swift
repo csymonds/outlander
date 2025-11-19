@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SwiftUI
 import Sparkle
 
 @main
@@ -14,6 +15,8 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 //    let updaterController: SPUStandardUpdaterController
     var windows: [NSWindow] = []
     var rootUrl: URL?
+    @available(macOS 11.0, *)
+    private lazy var preferencesController = PreferencesWindowController()
 
     override init() {
 //        updaterController = SPUStandardUpdaterController(startingUpdater: true, updaterDelegate: nil, userDriverDelegate: nil)
@@ -87,10 +90,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         windows.removeAll()
     }
 
-    @IBAction func preferences(_: Any) {
-        print("Preferences")
-    }
-
     @IBAction func connect(_: Any) {
         activeController?.showLogin()
     }
@@ -129,6 +128,29 @@ class AppDelegate: NSObject, NSApplicationDelegate {
 
     @IBAction func showWindowSettings(_: Any) {
         sendCommand("layout:Settings")
+    }
+
+    @IBAction func preferences(_: Any?) {
+        guard let context = activeController?.gameContext else {
+            let alert = NSAlert()
+            alert.messageText = "No active game window"
+            alert.informativeText = "Open or select a game window before updating preferences."
+            alert.alertStyle = .informational
+            alert.addButton(withTitle: "OK")
+            alert.runModal()
+            return
+        }
+
+        if #available(macOS 11.0, *) {
+            preferencesController.show(with: context)
+        } else {
+            let alert = NSAlert()
+            alert.messageText = "Preferences Unavailable"
+            alert.informativeText = "Preferences require macOS 11 or newer."
+            alert.alertStyle = .informational
+            alert.addButton(withTitle: "OK")
+            alert.runModal()
+        }
     }
 
     @IBAction func chooseSettingsDirectoryAction(_: Any) {
